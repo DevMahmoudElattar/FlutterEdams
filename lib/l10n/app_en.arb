@@ -1,0 +1,23 @@
+{
+  "payNow" : "PAY NOW",
+  "customerName" : "Hassan mohammed abd EL-zaher",
+  "balance" : "BALANCE",
+  "whatIsNew":"Latest News",
+  "homPage" : "Home",
+  "consumptions" : "Consumptions",
+  "applications" : "Applications",
+  "messages" : "Messages",
+
+  "userName" : "user name",
+  "psw" : "password",
+
+  "signIn" : "Sign In",
+  "register" : "Register",
+  "registerNow" : "Register Now",
+  "notMem" : "Not a member ? ",
+  "forgPsw" : "Forget Password ?",
+  "orSignWith" : "OR REGISTER WITH",
+
+  "themeMode" : "Theme Mode",
+  "lang" : "Language"
+}

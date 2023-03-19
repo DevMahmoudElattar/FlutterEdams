@@ -1,0 +1,22 @@
+{
+  "payNow" : "إدفع الآن",
+  "customerName" : "حسن محمد عبد الظاهر",
+  "balance" : "الرصيد",
+  "whatIsNew":"اخر الأخبار",
+  "homPage" : "الرئيسيه",
+  "consumptions" : "الإستهلاك",
+  "applications" : "التطبيقات",
+  "messages" : "الرسائل",
+
+  "userName" : "إسم المستخدم",
+  "psw" : "الرقم السري",
+
+  "signIn" : "دخول",
+  "register" : "سجل",
+  "registerNow" : "سجل الآن",
+  "notMem" : "غير مسجل ؟ ",
+  "forgPsw" : "نسيت كلمه المرور ؟",
+  "orSignWith" : "أو سجل الدخول بـ",
+  "themeMode" : "الألوان",
+  "lang" : "اللغه"
+}

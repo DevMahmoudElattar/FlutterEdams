@@ -1,0 +1,68 @@
+https://www.pinterest.com/sefuzephaniah/bills-app/
+
+animate widget position 
+https://stackoverflow.com/questions/60582454/animate-position-of-a-widget-in-flutter
+
+build for multi platform 
+https://stackoverflow.com/questions/47006906/developing-for-ios-device-in-windows-environment-with-flutter
+
+Flutter Icons 
+https://stackoverflow.com/questions/70401732/a-list-of-all-flutter-icons
+
+//How Shape Image with clipRRect & others
+https://stackoverflow.com/questions/51513429/how-to-do-rounded-corners-image-in-flutter
+
+//MultiLanguage App 
+https://devmuaz.medium.com/arabic-english-localization-with-flutter-bloc-cubit-implementations-advanced-d2bc1e28356
+https://www.youtube.com/watch?v=1qkIJx0A9WY
+https://stackoverflow.com/questions/67458492/how-to-manually-change-app-language-with-flutter-localizations-and-bloc
+https://blog.devgenius.io/flutter-localizations-using-bloc-pattern-cubit-and-without-any-packages-296aa57d7a23 ====> good
+https://www.flutterbeads.com/internationalization-and-localization-in-flutter/
+https://www.dbestech.com/tutorials/flutter-multi-language-tutorial-example-localization-using-getx
+https://docs.flutter.dev/development/accessibility-and-localization/internationalization REF
+
+https://www.youtube.com/watch?v=WrqH5fF2ZuY ==> Best
+
+
+
+###### Flutter Animation & custom Paint
+https://docs.flutter.dev/development/ui/widgets/animation ==> documentaion (good Resource & Ref)
+https://docs.flutter.dev/development/ui/animations ==> documentaion (good Resource & Ref)
+https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html 
+
+https://www.youtube.com/playlist?list=PL6yRaaP0WPkW3kwAerPeRqGBvJfO8O4S7
+https://medium.com/@ride4sun/flutter-animations-with-the-bloc-pattern-in-6-lines-of-code-53dbb2cba3da
+https://devmuaz.medium.com/implement-animations-using-bloc-and-statelesswidgets-in-flutter-4c272c05ddf6
+https://github.com/felangel/bloc/issues/18
+https://www.youtube.com/watch?v=ZTi2zRbdnDM
+https://www.youtube.com/watch?v=oExw0U4U_UI
+https://flexiple.com/app/basics-of-flutter-animations/
+https://flexiple.com/app/advanced-flutter-animations/
+
+
+### Path & customPainter IN Details 
+https://medium.com/flutter-community/paths-in-flutter-a-visual-guide-6c906464dcd0
+
+### Practice Designs 
+https://freebieflux.com/download-food-delivery-app-ui-freebie-by-pixeltrue.html
+https://www.youtube.com/watch?v=EDb3x1SwzbI
+https://www.youtube.com/@techieblossom/playlists
+
+
+## Custom Slider & buttom nav bar & drawer
+https://blog.logrocket.com/flutter-slider-widgets-deep-dive-with-examples/
+https://medium.com/flutter-community/flutter-sliders-demystified-4b3ea65879c
+https://stackoverflow.com/questions/57057765/how-can-i-customize-slider-widget-in-flutter
+https://dev.to/frezyx/non-standard-flutter-custom-bottom-navigation-bar-e0c
+
+https://www.geeksforgeeks.org/flutter-custom-bottom-navigation-bar/
+https://medium.flutterdevs.com/custom-animated-bottomnavigation-bar-in-flutter-65293e231e4a
+https://medium.com/litslink/flutter-custom-drawer-navigation-271617e80584
+https://www.youtube.com/watch?v=9hhWjjL2Z7Q
+
+https://www.youtube.com/watch?v=1ToqYMSnNhA
+
+https://www.youtube.com/watch?v=lPTb1ddTQ8o
+
+https://www.youtube.com/watch?v=gxdOJv_RiHg&list=PLybADvIp2cxgYovNF3r16TZjFD-4mcyMD&index=4
+
