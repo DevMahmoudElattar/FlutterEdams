@@ -14,9 +14,15 @@ class ColorsVal {
 
   static Color SectionBG_Color = Colors.white;
   //static Color SectionTitleColor = Colors.green.shade900;
-  static Color SectionTitleColor = const Color(0xff096d89);
+  //static Color SectionTitleColor = const Color(0xff096d89);
+  static Color SectionTitleColor = Colors.white;
   //static Color SectionSubTitleColor = Colors.green.shade600;
-  static Color SectionSubTitleColor = const Color(0xff4d7e8c);
+  static Color SectionSubTitleColor = Colors.white70;
+
+
+
+  //Main Car BG Color
+  static Color mainCardBG = const Color(0xff1A6DAF);
 
 
   static Color ArrowDownBalanceCollor = Colors.deepOrange.shade400;
@@ -46,7 +52,8 @@ class FontSizesVal {
   static double Paragraph = 12.0;
 
 
-  static double SectionHeader = 20.0;
+  static double SectionHeader = 50.0;
+  static double SectionHeader2 = 25.0;
   static double SectionSubHeader = 14.0;
   static double SectionContent = 12.0;
 
@@ -67,6 +74,15 @@ class Sizes {
   static double WthreeForth(BuildContext context) {
     return MediaQuery.of(context).size.width * .75;
   }
+
+  static double wGeneral(BuildContext context, double Percentage) {
+    return MediaQuery.of(context).size.width *Percentage;
+  }
+
+  static double hGeneral(BuildContext context, double Percentage) {
+    return MediaQuery.of(context).size.height *Percentage;
+  }
+
 
   static double SocialDimentionSquare = 40;
 
@@ -136,8 +152,15 @@ class TextStylesVal {
   static TextStyle SectionTitle2 =
   TextStyle(color: Colors.white, fontSize: FontSizesVal.Section2Header,fontWeight: FontWeight.bold);
 
+  static TextStyle SectionTitle3 =
+  const TextStyle(color: Colors.white, fontSize: 16);
+
   static TextStyle SectionBalance =
   TextStyle(color: ColorsVal.SectionTitleColor, fontSize: FontSizesVal.Section2Header,fontWeight: FontWeight.bold);
+
+  static TextStyle SectionHeader2 =
+  TextStyle(color: const Color(0xff1A6DAF), fontSize: FontSizesVal.SectionHeader2,fontWeight: FontWeight.bold);
+
 
 }
 

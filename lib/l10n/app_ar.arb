@@ -1,5 +1,5 @@
 {
-  "payNow" : "إدفع الآن",
+  "payNow" : "إدفع",
   "customerName" : "حسن محمد عبد الظاهر",
   "balance" : "الرصيد",
   "whatIsNew":"اخر الأخبار",
@@ -18,5 +18,12 @@
   "forgPsw" : "نسيت كلمه المرور ؟",
   "orSignWith" : "أو سجل الدخول بـ",
   "themeMode" : "الألوان",
-  "lang" : "اللغه"
+  "lang" : "اللغه",
+
+  "year" : "إبريل 2023",
+  "amount" : "R15",
+
+  "statements" : "الفواتير",
+
+  "problemReport" : "الإبلاغ عن مشكله"
 }

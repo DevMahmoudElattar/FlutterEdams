@@ -15,7 +15,7 @@ class WhatsNewSC extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only( bottom: SpacingValues.SectionInnerPadding),
-            child: Text(Trans.textVal(context).whatIsNew,style: TextStylesVal.SectionHeader,),
+            child: Text(Trans.textVal(context).whatIsNew,style: TextStylesVal.SectionHeader2,),
           ),
           Container(
             width: SpacingValues.SectionWidth,

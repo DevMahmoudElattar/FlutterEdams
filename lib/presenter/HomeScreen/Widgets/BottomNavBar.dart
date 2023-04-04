@@ -29,7 +29,7 @@ BottomNavigationBar HomeBottomNav (BuildContext context,int SelectedIndex,Functi
       ),
     ],
     currentIndex: SelectedIndex,
-    selectedItemColor: ColorsVal.SectionTitleColor,
+    selectedItemColor: ColorsVal.mainCardBG,
     onTap: itemTapped,
   );
 }

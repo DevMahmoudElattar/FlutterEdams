@@ -1,8 +1,8 @@
 {
-  "payNow" : "PAY NOW",
+  "payNow" : "PAY",
   "customerName" : "Hassan mohammed abd EL-zaher",
   "balance" : "BALANCE",
-  "whatIsNew":"Latest News",
+  "whatIsNew":"What's New",
   "homPage" : "Home",
   "consumptions" : "Consumptions",
   "applications" : "Applications",
@@ -19,5 +19,12 @@
   "orSignWith" : "OR REGISTER WITH",
 
   "themeMode" : "Theme Mode",
-  "lang" : "Language"
+  "lang" : "Language",
+
+  "year" : "APRIL 2023",
+  "amount" : "R15",
+
+  "statements" : "Statements",
+
+  "problemReport" : "Report A Problem"
 }

@@ -66,3 +66,12 @@ https://www.youtube.com/watch?v=lPTb1ddTQ8o
 
 https://www.youtube.com/watch?v=gxdOJv_RiHg&list=PLybADvIp2cxgYovNF3r16TZjFD-4mcyMD&index=4
 
+
+###### advanced UI 
+https://www.kodeco.com/22379941-building-complex-ui-in-flutter-magic-8-ball
+https://www.youtube.com/watch?v=FCyoHclCqc8
+https://flutterawesome.com/implementing-google-map-with-flutter/
+https://www.youtube.com/playlist?list=PL16VbpX7xKoW-uArVK1PLXETVgNCv1Bl0
+
+
+
