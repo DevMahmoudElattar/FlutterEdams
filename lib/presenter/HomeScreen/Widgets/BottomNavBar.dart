@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/utils.dart';
+import '../../ConsumpScreen/ConsumSC.dart';
 import '../HomeStartSC.dart';
 
 
@@ -39,10 +40,7 @@ BottomNavigationBar HomeBottomNav (BuildContext context,int SelectedIndex,Functi
 
  const List<Widget> WidgetsList = <Widget>[
    HomeStartSC(),
-  Text(
-    'Index 1: Consumtion',
-    style: optionStyle,
-  ),
+   ConsumSC(),
   Text(
     'Index 2: Applications',
     style: optionStyle,

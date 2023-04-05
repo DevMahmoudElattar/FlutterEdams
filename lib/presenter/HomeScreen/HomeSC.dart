@@ -78,6 +78,7 @@ class _HomeSCState extends State<HomeSC> {
     return Scaffold(
       drawer: HomeSC_Drawer(context,_onItemTapped),
       appBar: AppBar(
+        actions: [],
         iconTheme: const IconThemeData(color: Colors.blue),
         backgroundColor: Colors.white,
         //leading: Container(), adding this Will remove default humburger menu of drawer

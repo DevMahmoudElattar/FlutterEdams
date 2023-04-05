@@ -38,7 +38,7 @@ class _SplachScreenState extends State<SplachScreen> {
 
     Future.delayed(
         Duration(seconds: _duration),
-            () => Navigator.push(context, _createRoute(),),
+            () => Navigator.pushReplacement(context, _createRoute(),),
     );
   }
 

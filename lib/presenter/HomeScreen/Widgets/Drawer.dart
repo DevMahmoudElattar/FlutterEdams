@@ -9,9 +9,10 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
   return Drawer(
     backgroundColor: Colors.white,
     width: Sizes.WthreeForth(context),
-    child: ListView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       // Important: Remove any padding from the ListView.
-      padding: EdgeInsets.zero,
+      // padding: EdgeInsets.zero,
       children: [
         DrawerHeader(
           decoration: const BoxDecoration(
@@ -21,9 +22,25 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
             child: Image.asset(ImagesPath.Logo),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width : 50,
+                  height: 50,
+                  child: Image.memory(ImageFromSvg.UserPic()),
+                ),
+                ElevatedButton(onPressed: () {}, child: const Text("Sign Out"))
+              ],
+            ),
+          ),
+        ),
         ListTile(
           leading: IconsVal.home,
-          title:  Text(Trans.textVal(context).homPage),
+          title: Text(Trans.textVal(context).homPage),
           onTap: () {
             itemTapped(0);
             Navigator.pop(context);
@@ -31,7 +48,7 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
         ),
         ListTile(
           leading: IconsVal.Consumtions,
-          title:  Text(Trans.textVal(context).consumptions),
+          title: Text(Trans.textVal(context).consumptions),
           onTap: () {
             itemTapped(1);
             Navigator.pop(context);
@@ -39,7 +56,7 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
         ),
         ListTile(
           leading: IconsVal.Applications,
-          title:  Text(Trans.textVal(context).applications),
+          title: Text(Trans.textVal(context).applications),
           onTap: () {
             itemTapped(2);
             Navigator.pop(context);
@@ -47,7 +64,15 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
         ),
         ListTile(
           leading: IconsVal.Messages,
-          title:  Text(Trans.textVal(context).messages),
+          title: Text(Trans.textVal(context).messages),
+          onTap: () {
+            itemTapped(3);
+            Navigator.pop(context);
+          },
+        ),
+        ListTile(
+          leading: const Icon(Icons.attach_file),
+          title: const Text("Attachments"),
           onTap: () {
             itemTapped(3);
             Navigator.pop(context);
@@ -69,7 +94,7 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
                   children: [
                     Text(Trans.textVal(context).themeMode),
                     Switch(
-                        value: state.isDark??false,
+                        value: state.isDark ?? false,
                         onChanged: (val) {
                           bloc.setIsDark(val);
                         }),
@@ -88,11 +113,11 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
                 title: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                     Text(Trans.textVal(context).lang),
+                    Text(Trans.textVal(context).lang),
                     Switch(
-                        value: state.isEnglish??true,
+                        value: state.isEnglish ?? true,
                         onChanged: (val) {
-                          if (val==true) {
+                          if (val == true) {
                             bloc2.langIsEnglish(val);
                           }
                           bloc2.langIsEnglish(val);
@@ -106,6 +131,11 @@ Drawer HomeSC_Drawer(BuildContext context, Function(int val) itemTapped) {
             }
             return const Text("Bloc Provider Not Read");
           },
+        ), 
+        Container(
+          margin: EdgeInsets.only(bottom: 20),
+          width: Sizes.wGeneral(context, .5),
+          child: Image.memory(ImageFromSvg.EdamsLogo()),
         )
       ],
     ),

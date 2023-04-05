@@ -92,7 +92,7 @@ class _LoginSCState extends State<LoginSC> {
                         EdgeInsets.only(bottom: SpacingValues.InnerPadding),
                     child: InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, "/Home");
+                        Navigator.pushReplacementNamed(context, "/Home");
                       },
                       child: Container(
                         width: double.infinity,

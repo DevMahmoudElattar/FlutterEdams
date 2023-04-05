@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768272427418",
+    "project_id": "watercustomer-a63a5",
+    "storage_bucket": "watercustomer-a63a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768272427418:android:85135ab993c902f4357223",
+        "android_client_info": {
+          "package_name": "com.example.customers_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768272427418-fqq2go2dbo5mkmjuei6jj73gubhurn57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnED0Wh_ClYLPNeGpTU2fYj-QLyppx3Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768272427418-fqq2go2dbo5mkmjuei6jj73gubhurn57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
