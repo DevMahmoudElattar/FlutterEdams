@@ -80,7 +80,6 @@ Future<void> main() async {
 }
 
 //flutterLocalNotificationsPlugin
-
 void requestPermission() async {
   FirebaseMessaging messaging = FirebaseMessaging.instance;
   NotificationSettings settings = await messaging.requestPermission(
