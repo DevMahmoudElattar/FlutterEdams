@@ -1,5 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:customers_app/presenter/ApplicationsScreen/AppSC.dart';
 import 'package:customers_app/presenter/HomeScreen/HomeSC.dart';
+import 'package:customers_app/presenter/Login_SC/ForgetSC.dart';
+import 'package:customers_app/presenter/MessagesScreen/MsgsSC.dart';
+import 'package:customers_app/presenter/Report/ReportProblem.dart';
 import 'package:customers_app/presenter/SplachScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -212,6 +216,11 @@ class _MyAppState extends State<MyApp> {
               routes: {
                 '/': (context) => const SplachScreen(),
                 '/Home': (context) => const HomeSC(),
+                '/Forget' : (context) => const ForgetSC(),
+                '/SignUp' : (context) => const ForgetSC(),
+                '/ReportProblem' : (context) => const ReportProblemSC(),
+                '/Apps' : (context) => const AppSC(),
+                '/Msgs' : (context) => const MsgsSC(),
               },
               title: 'Flutter Demo',
               theme: ThemeData(

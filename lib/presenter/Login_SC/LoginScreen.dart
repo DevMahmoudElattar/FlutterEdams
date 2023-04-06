@@ -80,9 +80,14 @@ class _LoginSCState extends State<LoginSC> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          Trans.textVal(context).forgPsw,
-                          style: TextStylesVal.SubHeader,
+                        GestureDetector(
+                          onTap : (){
+                            Navigator.pushNamed(context, '/Forget');
+                          },
+                          child: Text(
+                            Trans.textVal(context).forgPsw,
+                            style: TextStylesVal.SubHeader,
+                          ),
                         )
                       ],
                     ),

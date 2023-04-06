@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/utils.dart';
+import '../../ApplicationsScreen/AppSC.dart';
 import '../../ConsumpScreen/ConsumSC.dart';
+import '../../MessagesScreen/MsgsSC.dart';
 import '../HomeStartSC.dart';
 
 
@@ -41,12 +43,6 @@ BottomNavigationBar HomeBottomNav (BuildContext context,int SelectedIndex,Functi
  const List<Widget> WidgetsList = <Widget>[
    HomeStartSC(),
    ConsumSC(),
-  Text(
-    'Index 2: Applications',
-    style: optionStyle,
-  ),
-   Text(
-     'Index 3: Messages',
-     style: optionStyle,
-   ),
+   AppSC(),
+   MsgsSC(),
 ];

@@ -6,10 +6,9 @@ class AppSC extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("This Is Applications Page"),
-      ),
+    return  Scaffold(
+      appBar: AppBar(title: const Text("Apps SC")),
+      body: const Text("this is Apps SC"),
     );
   }
 }

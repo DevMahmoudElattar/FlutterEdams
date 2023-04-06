@@ -6,10 +6,9 @@ class MsgsSC extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("This Is Messages Page"),
-      ),
+    return  Scaffold(
+      appBar: AppBar(title: const Text("Messages SC")),
+      body: const Text("this is Message Screen"),
     );
   }
 }
