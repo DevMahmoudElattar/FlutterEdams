@@ -192,11 +192,16 @@ class _LoginSCState extends State<LoginSC> {
                           Trans.textVal(context).notMem,
                           style: TextStylesVal.SubHeader,
                         ),
-                        Text(
-                          Trans.textVal(context).registerNow,
-                          style: TextStyle(
-                              color: ColorsVal.MainLoginColor,
-                              fontWeight: FontWeight.bold),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.pushNamed(context, "/SignUp");
+                          },
+                          child: Text(
+                            Trans.textVal(context).registerNow,
+                            style: TextStyle(
+                                color: ColorsVal.MainLoginColor,
+                                fontWeight: FontWeight.bold),
+                          ),
                         )
                       ],
                     ),

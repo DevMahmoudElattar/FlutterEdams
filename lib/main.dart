@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:customers_app/presenter/ApplicationsScreen/AppSC.dart';
 import 'package:customers_app/presenter/HomeScreen/HomeSC.dart';
 import 'package:customers_app/presenter/Login_SC/ForgetSC.dart';
+import 'package:customers_app/presenter/Login_SC/SignUpSC.dart';
 import 'package:customers_app/presenter/MessagesScreen/MsgsSC.dart';
 import 'package:customers_app/presenter/Report/ReportProblem.dart';
 import 'package:customers_app/presenter/SplachScreen.dart';
@@ -217,7 +218,7 @@ class _MyAppState extends State<MyApp> {
                 '/': (context) => const SplachScreen(),
                 '/Home': (context) => const HomeSC(),
                 '/Forget' : (context) => const ForgetSC(),
-                '/SignUp' : (context) => const ForgetSC(),
+                '/SignUp' : (context) => const SignUpSC(),
                 '/ReportProblem' : (context) => const ReportProblemSC(),
                 '/Apps' : (context) => const AppSC(),
                 '/Msgs' : (context) => const MsgsSC(),

@@ -28,7 +28,7 @@ BottomNavigationBar HomeBottomNav (BuildContext context,int SelectedIndex,Functi
       ),
       BottomNavigationBarItem(
         icon: IconsVal.Messages,
-        label: Trans.textVal(context).consumptions,
+        label: Trans.textVal(context).messages,
       ),
     ],
     currentIndex: SelectedIndex,
