@@ -30,13 +30,10 @@ class _LoginSCState extends State<LoginSC> {
       padding: EdgeInsets.all(SpacingValues.GeneralPadding),
       child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.only(bottom: SpacingValues.OuterPadding),
-            child: SizedBox(
-              width: double.infinity,
-              height: Sizes.HoneThird(context),
-              child: Image.asset(ImagesPath.Logo, fit: BoxFit.scaleDown),
-            ),
+          SizedBox(
+            width: double.infinity,
+            height: Sizes.HoneThird(context),
+            child: Image.memory(ImageFromSvg.SizaWater(), fit: BoxFit.scaleDown),
           ),
           Expanded(
             child: SingleChildScrollView(
@@ -47,10 +44,14 @@ class _LoginSCState extends State<LoginSC> {
                         EdgeInsets.only(bottom: SpacingValues.InnerPadding),
                     child:  TextField(
                       decoration: InputDecoration(
-                        suffixIcon: const Icon(Icons.account_circle_sharp),
-                        border: const OutlineInputBorder(),
-                        labelText: Trans.textVal(context).userName,
+                        //suffixIcon: const Icon(Icons.account_circle_sharp),
+                        border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                        // labelText: Trans.textVal(context).userName,
+                        // labelStyle: TextStyle(color : ColorsVal.SubHeader),
                         hintText: Trans.textVal(context).userName,
+                        hintStyle: const TextStyle(color : Colors.white),
+                        filled: true,
+                        fillColor: ColorsVal.mainCardBG,
                       ),
                     ),
                   ),
@@ -60,17 +61,20 @@ class _LoginSCState extends State<LoginSC> {
                     child: TextFormField(
                       obscureText: _obscureText,
                       decoration: InputDecoration(
-                        suffixIcon: IconButton(
-                          icon: _obscureText
-                              ? const Icon(Icons.visibility_off)
-                              : const Icon(Icons.visibility),
-                          onPressed: () {
-                            _toggle();
-                          },
-                        ),
-                        border: const OutlineInputBorder(),
-                        labelText: Trans.textVal(context).psw,
+                        // suffixIcon: IconButton(
+                        //   icon: _obscureText
+                        //       ? const Icon(Icons.visibility_off)
+                        //       : const Icon(Icons.visibility),
+                        //   onPressed: () {
+                        //     _toggle();
+                        //   },
+                        // ),
+                        filled: true,
+                        fillColor: ColorsVal.mainCardBG,
+                        border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                        // labelText: Trans.textVal(context).psw,
                         hintText: Trans.textVal(context).psw,
+                        hintStyle: TextStyle(color : Colors.white),
                       ),
                     ),
                   ),
@@ -78,7 +82,7 @@ class _LoginSCState extends State<LoginSC> {
                     padding:
                         EdgeInsets.only(bottom: SpacingValues.InnerPadding),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         GestureDetector(
                           onTap : (){
@@ -86,7 +90,7 @@ class _LoginSCState extends State<LoginSC> {
                           },
                           child: Text(
                             Trans.textVal(context).forgPsw,
-                            style: TextStylesVal.SubHeader,
+                            style: TextStyle(color: ColorsVal.mainCardBG,fontSize: 16),
                           ),
                         )
                       ],
