@@ -46,8 +46,14 @@ class ReportProblemSC extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      ElevatedButton(onPressed: (){}, child: const SizedBox(child: Text("save",textAlign: TextAlign.center,))),
-                      ElevatedButton(onPressed: (){}, child: const SizedBox(child: Text("TakePicture",textAlign: TextAlign.center,))),
+                      ElevatedButton(onPressed: (){}, child:  Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: SizedBox(width: 35,child: Image.memory(ImageFromSvg.CameraIcon())),
+                      )),
+                      ElevatedButton(onPressed: (){}, child:  Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: SizedBox(width: 35,child: Image.memory(ImageFromSvg.SaveIcon())),
+                      )),
                     ],
                   )
                 ],
