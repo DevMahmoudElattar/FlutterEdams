@@ -3,6 +3,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/utils.dart';
+import '../ApplicationsScreen/AppSC.dart';
+import '../ConsumpScreen/ConsumSC.dart';
+import '../MessagesScreen/MsgsSC.dart';
 import 'HomeStartSC.dart';
 import 'Widgets/BottomNavBar.dart';
 import 'Widgets/Drawer.dart';
@@ -47,21 +50,12 @@ class _HomeSCState extends State<HomeSC> {
   };
 
 
-  // final List<Widget> _widgetOptions = <Widget>[
-  //   const HomeStartSC(),
-  //   const Text(
-  //     'Index 1: Consumtion',
-  //     style: optionStyle,
-  //   ),
-  //   const Text(
-  //     'Index 2: Applications',
-  //     style: optionStyle,
-  //   ),
-  //   const Text(
-  //     'Index 3: Messages',
-  //     style: optionStyle,
-  //   ),
-  // ];
+  final List<Widget> _widgetOptions = <Widget>[
+    HomeStartSC(),
+    ConsumSC(),
+    AppSC(),
+    MsgsSC(),
+  ];
 
 
   buildNavigator() {
@@ -84,7 +78,7 @@ class _HomeSCState extends State<HomeSC> {
         //leading: Container(), adding this Will remove default humburger menu of drawer
         title:  Text(_HomeSCState.SelectedName,style: TextStyle(color: Colors.blue),),
       ),
-      body: buildNavigator(),
+      body: _widgetOptions[_selectedIndex],
       // body: IndexedStack(
       //   index: _selectedIndex,
       //   children:WidgetsList,

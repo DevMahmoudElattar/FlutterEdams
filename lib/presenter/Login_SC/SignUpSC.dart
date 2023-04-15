@@ -57,7 +57,7 @@ class SignUpSC extends StatelessWidget {
                       labelText: 'Account No.',
                       hintText: 'Enter Your Account No.'
                   ),  ),
-                  Divider(height: 20,),
+                  const Divider(height: 20,),
                   ElevatedButton(onPressed: (){}, child: SizedBox(width: Sizes.wGeneral(context, .9),child: Text("Sign up",textAlign: TextAlign.center,)))
                 ],
               ),

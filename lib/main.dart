@@ -69,17 +69,23 @@ void notificationTapBackground(NotificationResponse notificationResponse) {
 
 //BG work Function
 Future<void> _firebaseMessagingBackgroundHandler (RemoteMessage message) async {
+  if(message.data.isNotEmpty){
+    GlobalData = message.data;
+    if(GlobalData[0] != null){
+      GlobalRoute = GlobalData[0];
+    }
+  }
   print('Handling a background message ${message.messageId}');
 }
+
+Map<String, dynamic> GlobalData = {};
+String GlobalRoute = "";
 
 Future<void> main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await FirebaseMessaging.instance.getInitialMessage();
-
-  //To make Messages Work in BackGround;
-  //FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(const MyApp());
 }
@@ -120,7 +126,7 @@ void saveToken(String token) async {
   });
 }
 
-void initInfo() async {
+void initInfo(BuildContext context) async {
   var androidInitialize =
       const AndroidInitializationSettings('@mipmap/ic_launcher');
   var i0SInitialize = const DarwinInitializationSettings();
@@ -166,7 +172,26 @@ void initInfo() async {
     await flutterLocalNotificationsPlugin.show(0,message.notification?.title,message.notification?.body,platformChannelSpecifics,
         payload: message.data['title']);
   });
+
+
+  //To make Messages Work in BackGround;
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+  FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+
+    print('Just received a notification when app is opened');
+    if(message.notification != null){
+      //"route" will be your root parameter you sending from firebase
+      final routeFromNotification = message.data["route"];
+      if (routeFromNotification != null) {
+        GlobalRoute = message.data["route"];
+        Navigator.of(context).pushNamedAndRemoveUntil('/Msgs',(Route<dynamic> route) => false);
+      }
+    }
+  });
 }
+
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -174,6 +199,7 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 }
+
 
 class _MyAppState extends State<MyApp> {
   String Mtoken = "";
@@ -183,7 +209,6 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     requestPermission();
     getToken();
-    initInfo();
   }
 
   void getToken() async {
@@ -201,6 +226,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    initInfo(context);
     return BlocProvider(
       create: (context) => SmallSharedCubit(),
       child: BlocBuilder<SmallSharedCubit, SmallSharedState>(
@@ -215,7 +241,7 @@ class _MyAppState extends State<MyApp> {
                   : const Locale('ar'),
               debugShowCheckedModeBanner: false,
               routes: {
-                '/': (context) => const SplachScreen(),
+                '/':  (context) => const SplachScreen(),
                 '/Home': (context) => const HomeSC(),
                 '/Forget' : (context) => const ForgetSC(),
                 '/SignUp' : (context) => const SignUpSC(),
@@ -223,6 +249,7 @@ class _MyAppState extends State<MyApp> {
                 '/Apps' : (context) => const AppSC(),
                 '/Msgs' : (context) => const MsgsSC(),
               },
+              initialRoute:  "/",
               title: 'Flutter Demo',
               theme: ThemeData(
                 // This is the theme of your application.

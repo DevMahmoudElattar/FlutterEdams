@@ -1,10 +1,11 @@
+import 'package:customers_app/presenter/MessagesScreen/MsgsSC.dart';
 import 'package:flutter/material.dart';
 
+import '../main.dart';
 import 'Login_SC/LoginScreen.dart';
 
 class SplachScreen extends StatefulWidget {
   const SplachScreen({Key? key}) : super(key: key);
-
 
 
   @override
@@ -21,7 +22,7 @@ class _SplachScreenState extends State<SplachScreen> {
 
     Route _createRoute() {
       return PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => const LoginSC(),
+        pageBuilder:  (context, animation, secondaryAnimation) => const LoginSC(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           const begin = Offset(0.0, 1.0);
           const end = Offset.zero;
@@ -38,7 +39,7 @@ class _SplachScreenState extends State<SplachScreen> {
 
     Future.delayed(
         Duration(seconds: _duration),
-            () => Navigator.pushReplacement(context, _createRoute(),),
+            () => Navigator.pushReplacement(context, _createRoute()),
     );
   }
 
