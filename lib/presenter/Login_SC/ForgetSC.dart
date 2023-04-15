@@ -23,8 +23,8 @@ class ForgetSC extends StatelessWidget {
                   labelText: 'Email',
                   hintText: 'Enter Your Email'
               ),  ),
-              Divider(height: 20,),
-              ElevatedButton(onPressed: (){}, child: Text("Reset Password"))
+              const Divider(height: 20,color: Colors.transparent,),
+              ElevatedButton(onPressed: (){}, child: const SizedBox(width: double.infinity,child: Text("Reset Password",textAlign: TextAlign.center,)))
             ],
           ),
         ),
