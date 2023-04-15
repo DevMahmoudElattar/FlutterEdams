@@ -28,6 +28,7 @@ class SignUpSC extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
                     height: 100,
