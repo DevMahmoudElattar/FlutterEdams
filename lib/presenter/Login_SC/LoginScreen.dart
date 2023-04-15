@@ -27,7 +27,7 @@ class _LoginSCState extends State<LoginSC> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: EdgeInsets.all(SpacingValues.GeneralPadding),
+      padding:const EdgeInsets.all(50),
       child: Column(
         children: [
           SizedBox(
@@ -107,7 +107,7 @@ class _LoginSCState extends State<LoginSC> {
                         width: double.infinity,
                         height: SpacingValues.MainButtonHeight,
                         decoration: BoxDecoration(
-                            color: ColorsVal.MainLoginColor,
+                            color: Colors.orangeAccent,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.withOpacity(0.8),
@@ -117,8 +117,8 @@ class _LoginSCState extends State<LoginSC> {
                                     0, 2), // changes position of shadow
                               ),
                             ],
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(Sizes.ButtonRadius))),
+                            borderRadius: const BorderRadius.all(
+                                Radius.circular(50))),
                         child: Center(
                           child: Text(
                             Trans.textVal(context).signIn,
@@ -128,29 +128,29 @@ class _LoginSCState extends State<LoginSC> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding:
-                        EdgeInsets.only(bottom: SpacingValues.InnerPadding),
-                    child: Row(children: <Widget>[
-                      Expanded(
-                          child: Divider(
-                        color: ColorsVal.Header,
-                        thickness: .75,
-                      )),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Text(
-                          Trans.textVal(context).orSignWith,
-                          style: TextStylesVal.SubHeader,
-                        ),
-                      ),
-                      Expanded(
-                          child: Divider(
-                        color: ColorsVal.Header,
-                        thickness: .75,
-                      )),
-                    ]),
-                  ),
+                  // Padding(
+                  //   padding:
+                  //       EdgeInsets.only(bottom: SpacingValues.InnerPadding),
+                  //   child: Row(children: <Widget>[
+                  //     Expanded(
+                  //         child: Divider(
+                  //       color: ColorsVal.Header,
+                  //       thickness: .75,
+                  //     )),
+                  //     Padding(
+                  //       padding: const EdgeInsets.symmetric(horizontal: 10),
+                  //       child: Text(
+                  //         Trans.textVal(context).orSignWith,
+                  //         style: TextStylesVal.SubHeader,
+                  //       ),
+                  //     ),
+                  //     Expanded(
+                  //         child: Divider(
+                  //       color: ColorsVal.Header,
+                  //       thickness: .75,
+                  //     )),
+                  //   ]),
+                  // ),
                   // Padding(
                   //   padding:
                   //       EdgeInsets.only(bottom: SpacingValues.InnerPadding),
@@ -192,10 +192,6 @@ class _LoginSCState extends State<LoginSC> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          Trans.textVal(context).notMem,
-                          style: TextStylesVal.SubHeader,
-                        ),
                         GestureDetector(
                           onTap: (){
                             Navigator.pushNamed(context, "/SignUp");
@@ -203,13 +199,35 @@ class _LoginSCState extends State<LoginSC> {
                           child: Text(
                             Trans.textVal(context).registerNow,
                             style: TextStyle(
+                              fontSize: 16,
                                 color: ColorsVal.MainLoginColor,
                                 fontWeight: FontWeight.bold),
                           ),
                         )
                       ],
                     ),
-                  )
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(bottom: SpacingValues.InnerPadding),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.pushNamed(context, "/ReportProblem");
+                          },
+                          child: Text(
+                            Trans.textVal(context).problemReport,
+                            style: TextStyle(
+                              fontSize: 16,
+                                color: ColorsVal.MainLoginColor,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
