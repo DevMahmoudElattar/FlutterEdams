@@ -2,6 +2,7 @@ import 'package:customers_app/presenter/MessagesScreen/MsgsSC.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
+import '../utils/utils.dart';
 import 'Login_SC/LoginScreen.dart';
 
 class SplachScreen extends StatefulWidget {
@@ -46,11 +47,15 @@ class _SplachScreenState extends State<SplachScreen> {
   @override
   Widget build(BuildContext context) {
 
-    return  const Scaffold(
-      body: SizedBox(
-        width: double.infinity,
-        height: double.infinity,
-        child: Image(image: AssetImage('assets/images/Logo.png')) ,
+    return   Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          //child: Image(image: AssetImage('assets/images/Logo.png')) ,
+          child: Image.memory(ImageFromSvg.SizaWater()) ,
+        ),
       ),
     );
   }
