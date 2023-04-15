@@ -147,41 +147,41 @@ class _LoginSCState extends State<LoginSC> {
                       )),
                     ]),
                   ),
-                  Padding(
-                    padding:
-                        EdgeInsets.only(bottom: SpacingValues.InnerPadding),
-                    child: SizedBox(
-                      width: Sizes.Whalf(context),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Container(
-                              width: Sizes.SocialDimentionSquare,
-                              height: Sizes.SocialDimentionSquare,
-                              child: Image.memory(
-                                ImageFromSvg.Facebook(),
-                                fit: BoxFit.scaleDown,
-                              ),
-                            ),
-                            Container(
-                              width: Sizes.SocialDimentionSquare,
-                              height: Sizes.SocialDimentionSquare,
-                              child: Image.memory(
-                                ImageFromSvg.Google(),
-                                fit: BoxFit.scaleDown,
-                              ),
-                            ),
-                            Container(
-                              width: Sizes.SocialDimentionSquare,
-                              height: Sizes.SocialDimentionSquare,
-                              child: Image.memory(
-                                ImageFromSvg.Apple(),
-                                fit: BoxFit.scaleDown,
-                              ),
-                            )
-                          ]),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding:
+                  //       EdgeInsets.only(bottom: SpacingValues.InnerPadding),
+                  //   child: SizedBox(
+                  //     width: Sizes.Whalf(context),
+                  //     child: Row(
+                  //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //         children: <Widget>[
+                  //           Container(
+                  //             width: Sizes.SocialDimentionSquare,
+                  //             height: Sizes.SocialDimentionSquare,
+                  //             child: Image.memory(
+                  //               ImageFromSvg.Facebook(),
+                  //               fit: BoxFit.scaleDown,
+                  //             ),
+                  //           ),
+                  //           Container(
+                  //             width: Sizes.SocialDimentionSquare,
+                  //             height: Sizes.SocialDimentionSquare,
+                  //             child: Image.memory(
+                  //               ImageFromSvg.Google(),
+                  //               fit: BoxFit.scaleDown,
+                  //             ),
+                  //           ),
+                  //           Container(
+                  //             width: Sizes.SocialDimentionSquare,
+                  //             height: Sizes.SocialDimentionSquare,
+                  //             child: Image.memory(
+                  //               ImageFromSvg.Apple(),
+                  //               fit: BoxFit.scaleDown,
+                  //             ),
+                  //           )
+                  //         ]),
+                  //   ),
+                  // ),
                   Padding(
                     padding:
                         EdgeInsets.only(bottom: SpacingValues.InnerPadding),
